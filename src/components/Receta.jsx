@@ -35,7 +35,7 @@ const Receta = ({ receta }) => {
             if (inforeceta[`strIngredient${i}`]) {
                 ingredientes.push(
                     <li>
-                        ${inforeceta[`strIngredient${i}`]} - $
+                        {inforeceta[`strIngredient${i}`]} -
                         {inforeceta[`strMeasure${i}`]}
                     </li>
                 );
