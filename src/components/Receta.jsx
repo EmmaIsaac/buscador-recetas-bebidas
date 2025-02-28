@@ -1,4 +1,5 @@
 import { useState, useContext } from "react";
+import PropTypes from "prop-types";
 import { ModalContext } from "../context/ModalContext";
 
 import Modal from "@mui/material/Modal";
@@ -91,6 +92,10 @@ const Receta = ({ receta }) => {
             </div>
         </div>
     );
+};
+
+Receta.propTypes = {
+    receta: PropTypes.object.isRequired,
 };
 
 export default Receta;
